@@ -11,7 +11,10 @@ let decision = true;
 while (decision) {
   const firstName = prompt("Enter first name.");
   const lastName = prompt("Enter last name.");
-  const salary = prompt("Enter salary.");
+  let salary = prompt("Enter salary.");
+  if (isNaN(salary) || salary === null) {
+    salary = 0;
+  }
   let employee = {
     firstName: firstName,
     lastName: lastName,
@@ -21,6 +24,7 @@ while (decision) {
     decision = confirm("Employee saved. Add another Employee?");
 
     allEmployees.push(employee);
+   
 }
   return allEmployees;
 }

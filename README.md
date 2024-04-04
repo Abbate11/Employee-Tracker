@@ -18,4 +18,3 @@ I learned a lot about formatting data into arrays and manipulating that data. I 
 ## License
 
 See repo for MIT license
->>>>>>> af71dd25c25ebccdf642c8a2c850a25b46a13312

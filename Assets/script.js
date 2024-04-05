@@ -39,8 +39,7 @@ while (decision) {
     totalSalary += parseInt(currentEmployee.salary);
   }
   let averageSalary = totalSalary / employeesArray.length;
-  console.log(`There are ${employeesArray.length} employees`)
-  console.log(`The average salary is $ ${averageSalary} `);
+  console.log(`There are ${employeesArray.length} employees. The average salary is $${averageSalary}`)
   alert(`There are ${employeesArray.length} employees. The average salary is $${averageSalary.toFixed(2)}`)
   return averageSalary;
 }
@@ -50,7 +49,7 @@ while (decision) {
 const getRandomEmployee = function (employeesArray) {
   let randomEmployee = Math.floor(Math.random() * employeesArray.length);
   console.log(`The randomly selected employee is:${employeesArray[randomEmployee].firstName} ${employeesArray[randomEmployee].lastName}`);
-  alert(`Congrats to ${employeesArray[randomEmployee].firstName} ${employeesArray[randomEmployee].lastName} for being randomly selected.`);
+  alert(`Congrats to ${employeesArray[randomEmployee].firstName} ${employeesArray[randomEmployee].lastName} for being randomly selected!`);
   }
 
 // /*
